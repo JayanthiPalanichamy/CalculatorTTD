@@ -7,6 +7,6 @@ public class CalculatorArray {
     }
 
     public static int maxValue(List<Integer> arrayList2) {
-        return 0;
+        return arrayList2.stream().max(Comparator.naturalOrder()).orElse(-1);
     }
 }
