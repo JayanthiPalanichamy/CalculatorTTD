@@ -32,4 +32,9 @@ public class ArrayTest {
     public void returnHundredAsMaxValueFromGivenArray() {
         assertEquals(100,CalculatorArray.maxValue(arrayList2));
     }
+
+    @Test
+    public void returnAverageFromGivenArray() {
+    assertEquals("24.6",String.valueOf(CalculatorArray.averageValue(arrayList2)));
+    }
 }
