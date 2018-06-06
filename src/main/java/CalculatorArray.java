@@ -3,7 +3,7 @@ import java.util.List;
 
 public class CalculatorArray {
     public static int minValue(List<Integer> arrayList) {
-        return arrayList.stream().min(Comparator.naturalOrder()).orElse(0);
+        return arrayList.stream().min(Comparator.naturalOrder()).orElse(-1);
     }
 
     public static int maxValue(List<Integer> arrayList) {
@@ -11,6 +11,6 @@ public class CalculatorArray {
     }
 
     public static double averageValue(List<Integer> arrayList) {
-        return arrayList.stream().mapToDouble(x->x).average().orElse(-1.0);
+        return arrayList.stream().mapToDouble(x -> x).average().orElse(-1.0);
     }
 }
